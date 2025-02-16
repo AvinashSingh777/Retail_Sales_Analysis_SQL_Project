@@ -1,4 +1,4 @@
-# SQl_Project_Retail_Sales_Analysis
+# SQL_Project_Retail_Sales_Analysis
 
 ## Project Overview
 
