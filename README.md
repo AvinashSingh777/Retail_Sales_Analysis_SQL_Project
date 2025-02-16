@@ -18,22 +18,22 @@ This project is  to explore, clean, and analyze retail sales data. The project i
 - **Database Creation**: The project starts by creating a database named retail.
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
-CREATE DATABASE retail;
+CREATE DATABASE retail;<br/>
 
-CREATE TABLE retail_sales
-(
-    transactions_id INT PRIMARY KEY,
-    sale_date DATE,	
-    sale_time TIME,
-    customer_id INT,	
-    gender VARCHAR(10),
-    age INT,
-    category VARCHAR(35),
-    quantity INT,
-    price_per_unit FLOAT,	
-    cogs FLOAT,
-    total_sale FLOAT
-);
+CREATE TABLE retail_sales<br/>
+(<br/>
+    transactions_id INT PRIMARY KEY,<br/>
+    sale_date DATE,	<br/>
+    sale_time TIME,<br/>
+    customer_id INT,	<br/>
+    gender VARCHAR(10),<br/>
+    age INT,<br/>
+    category VARCHAR(35),<br/>
+    quantity INT,<br/>
+    price_per_unit FLOAT,	<br/>
+    cogs FLOAT, <br/>
+    total_sale FLOAT <br/>
+); <br/>
 
 ### 2. Data Exploration & Cleaning
 
@@ -42,7 +42,7 @@ CREATE TABLE retail_sales
 - **Category Count**: Identify all unique product categories in the dataset.
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
 
---sql--
+--sql--<br/>
 SELECT COUNT(*) FROM retail_sales;<br/>
 SELECT COUNT(DISTINCT customer_id) FROM retail_sales;<br/>
 SELECT DISTINCT category FROM retail_sales;<br/>
