@@ -47,6 +47,8 @@ SELECT COUNT(*) FROM retail_sales;<br/>
 SELECT COUNT(DISTINCT customer_id) FROM retail_sales;<br/>
 SELECT DISTINCT category FROM retail_sales;<br/>
 
+-- Data Cleaning --<br/>
+
 SELECT * FROM retail_sales<br/>
 WHERE <br/>
     sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR <br/>
